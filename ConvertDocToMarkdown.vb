@@ -139,8 +139,8 @@ Private Sub ConvertItalic()
                                        
                 ' Don't bother to markup newline characters (prevents a loop, as well)
                 If Not .Text = vbCr Then
-                    .InsertBefore "''"
-                    .InsertAfter "''"
+                    .InsertBefore "_"
+                    .InsertAfter "_"
                 End If
                 
                 .Font.Italic = False
