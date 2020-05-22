@@ -199,8 +199,10 @@ Private Sub ConvertLists()
             For i = 1 To .ListFormat.ListLevelNumber
                 If .ListFormat.ListType = wdListBullet Then
                     .InsertBefore "*"
-                Else
-                    .InsertBefore "#"
+                End If
+                If .ListFormat.ListType = wdListSimpleNumbering Then
+                     ' This for numbered list
+                    .InsertBefore CStr(i) + "."
                 End If
             Next i
             .ListFormat.RemoveNumbers
