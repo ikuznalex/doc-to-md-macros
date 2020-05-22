@@ -1,6 +1,6 @@
 
 
-Sub Word2Wiki()
+Sub DocToMarkdown()
     
     Application.ScreenUpdating = False
     
