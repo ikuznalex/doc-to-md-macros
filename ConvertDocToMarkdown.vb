@@ -15,6 +15,8 @@ Sub Word2Wiki()
     ConvertBold
     ConvertUnderline
     
+    ConvertLinks
+    
     ConvertLists
     ConvertTables
     
@@ -209,7 +211,18 @@ Private Sub ConvertLists()
         End With
     Next para
 End Sub
- 
+
+Private Sub ConvertLinks()
+   Dim para As Paragraph
+   Dim i As Long
+    For Each link In ActiveDocument.Hyperlinks
+        With link.Range
+            .InsertBefore "["
+            .InsertAfter "]" + "(" + link.Address + ")"
+        End With
+     Next link
+End Sub
+
 Private Sub ConvertTables()
 
     Dim myRange As Word.Range
