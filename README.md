@@ -13,14 +13,20 @@ You should see _Microsoft Visual Basic for Applications_ window
 
 ### These steps each time you want to convert a document
  - Open the word document you want to convert
- - Hit Alt + F8 (or choose View->Macros) 
- - The result of conversion you should see right inside word document
+ - Hit Alt + F8 (or choose View->Macros)
  - Run the macros DocToMarkdown 
+ - The result of conversion you should see right inside word document
  
- ### Supported elements
+ ### Supported elements (will be converted to markdown)
   - Heading Styles from 1 to 5
-  - _Italic_, **Bold**, <u>Underline</u> text formatting and their combination
+  - Text formatting
+    - _Italic_
+    - **Bold**
+    - <u>Underline</u>
+    - Combination fo styles above
   - Links
-  - First-level numbered and bulleted lists
+  - First-level lists
+    - Numbered
+    - Bulleted
   - Tables 
 
