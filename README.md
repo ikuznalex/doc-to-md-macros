@@ -30,7 +30,7 @@ You should see _Microsoft Visual Basic for Applications_ window
     - Bulleted
   - Tables 
 
-### What to do if something is not working correctly?
- - Please add the issue to the [Issues](https://github.com/ikuznalex/doc-to-md-macros/issues) section. 
- - Create pull request with the fix.
+### What to do if something is not working correctly or you have an enhancement idea?
+ - Add the issue with _bug_ or _enhancements_ label to the [Issues](https://github.com/ikuznalex/doc-to-md-macros/issues) section. 
+ - Create pull request with the fix or enhancement.
 Thanks!
