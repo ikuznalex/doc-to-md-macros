@@ -3,7 +3,7 @@ Microsoft Word macros which converts content of word document file to markdown s
 
 ## How to use?
 
-### The following steps should be do once
+### The following steps should be done once
 1. Open your word document and then hit Alt+F11.
 You should see _Microsoft Visual Basic for Applications_ window
 2. Right click on **Normal** project. Insert -> Module
