@@ -25,8 +25,7 @@ Sub Word2Wiki()
 End Sub
  
 Private Sub ConvertParagraphStyle(styleToReplace As WdBuiltinStyle, _
-                                    preText As String, _
-                                    postText As String)
+                                    preText As String)
     Dim normalStyle As Style
     Set normalStyle = ActiveDocument.Styles(wdStyleNormal)
     
@@ -60,7 +59,6 @@ Private Sub ConvertParagraphStyle(styleToReplace As WdBuiltinStyle, _
                 ' Don't bother to markup newline characters (prevents a loop, as well)
                 If Not .Text = vbCr Then
                     .InsertBefore preText
-                    .InsertAfter postText
                 End If
                 
                 .Style = normalStyle
