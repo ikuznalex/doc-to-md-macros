@@ -14,8 +14,8 @@ You should see _Microsoft Visual Basic for Applications_ window
 ### Do these steps each time you want to convert a document
  - Open the word document you want to convert
  - Hit Alt + F8 (or choose View->Macros)
- - Run the macros DocToMarkdown 
- - The result of conversion you should see right inside word document
+ - Run the macros _DocToMarkdown_ 
+ - The result of conversion you should see right inside the word document
  
  ### Supported elements (will be converted to markdown)
   - Heading Styles from 1 to 5
