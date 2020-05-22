@@ -233,14 +233,12 @@ Private Sub ConvertTables()
                 j = 0
                 For Each tCell In tRow.Cells
                     j = j + 1
-                    If j = 2 Then
-                        strText = "--"
-                    Else
-                        strText = tCell.Range.Text
-                    End If
+                    strText = tCell.Range.Text
                     x(i, j) = Left(strText, Len(strText) - 2)
                 Next tCell
             Next tRow
+             
+           
             
             'Delete table and position after table
             Set myRange = tTable.Range
@@ -248,18 +246,24 @@ Private Sub ConvertTables()
             tTable.Delete
             
             'Rewrite table with memorized text
-            myRange.InsertParagraphAfter
-            myRange.InsertAfter ("|")
+            'Add one more row for header
+            i = i + 1
             myRange.InsertParagraphAfter
             For k = 1 To i
                 For l = 1 To j
-                    myRange.InsertAfter " | " + x(k, l)
+                    If k = 1 Then
+                        myRange.InsertAfter " | " + x(k, l)
+                    ElseIf k = 2 Then
+                        myRange.InsertAfter " |--"
+                    Else
+                        myRange.InsertAfter " | " + x(k - 1, l)
+                    End If
                 Next l
                 myRange.InsertParagraphAfter
             Next k
-            myRange.InsertAfter ("|")
             myRange.InsertParagraphAfter
             
     Next tTable
 
 End Sub
+
