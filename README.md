@@ -1,5 +1,5 @@
 # doc-to-md-macros
-Microsoft Word macros which converts content of word document file to markdown syntax.
+Microsoft Word macros which converts content of the document to markdown(.md) syntax.
 
 ## How to use?
 
