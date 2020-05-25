@@ -17,6 +17,7 @@ You should see _Microsoft Visual Basic for Applications_ window
  - Hit Alt + F8 (or choose View->Macros)
  - Run the macros _DocToMarkdown_ 
  - The result of conversion you should see right inside the word document
+ - Copy-Paste the content of the file to .md document
  
  ### Supported elements (will be converted to markdown)
   - Heading Styles from 1 to 5
