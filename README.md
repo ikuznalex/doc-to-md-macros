@@ -8,6 +8,7 @@ Microsoft Word macros which converts content of the document to markdown(.md) sy
 You should see _Microsoft Visual Basic for Applications_ window
 2. Right click on **Normal** project. Insert -> Module
    - In this case the macros will be available for any document on your machine
+   <img width="304" alt="add-module" src="https://user-images.githubusercontent.com/5716707/82793442-92d6bf00-9e79-11ea-90b4-c747fd642e81.png">
 3. Select the code of the module from [this page](https://github.com/ikuznalex/doc-to-md-macros/edit/master/ConvertDocToMarkdown.vb)
 4. Close the Visial Basic for Applications window.
 
